@@ -71,7 +71,6 @@ nav:
   - 语法参考: syntax-reference.md
   - FFI 指南: ffi-guide.md
   - 标准库与FFI参考: std-ffi-reference.md
-  - IR构建器迁移指南: codegen-to-ir-builder-migration.md
   - 标准库:
     - 概览: stdlib/index.md
     - 分配器: stdlib/allocator.md
