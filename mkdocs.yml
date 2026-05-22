@@ -66,3 +66,20 @@ extra:
 
 nav:
   - 首页: index.md
+  - 快速开始: quickstart.md
+  - 语言指南: language-guide.md
+  - 语法参考: syntax-reference.md
+  - FFI 指南: ffi-guide.md
+  - 标准库与FFI参考: std-ffi-reference.md
+  - IR构建器迁移指南: codegen-to-ir-builder-migration.md
+  - 标准库:
+    - 概览: stdlib/index.md
+    - 分配器: stdlib/allocator.md
+    - 简易HTTP: stdlib/easyhttp.md
+    - 文件操作: stdlib/file.md
+    - IO增强: stdlib/ioplus.md
+    - 数学库: stdlib/math.md
+    - 网络库: stdlib/network.md
+    - 字符串构建器: stdlib/stringbuilder.md
+    - 字符串增强: stdlib/stringplus.md
+  
