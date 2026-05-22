@@ -1,0 +1,75 @@
+site_name: Cavvy 语言文档
+site_url: https://cavvy-lang.github.io/cavvy-learn/
+site_author: Ethernos Studio
+repo_name: cavvy-lang/cavvy-learn
+repo_url: https://github.com/cavvy-lang/cavvy-learn
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # 暗色模式切换
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs           # 顶部标签导航
+    - navigation.sections       # 章节展开
+    - navigation.expand         # 默认展开子目录
+    - navigation.top            # 返回顶部按钮
+    - search.suggest            # 搜索建议
+    - search.highlight          # 搜索结果高亮
+    - content.code.copy         # 代码块复制按钮
+    - content.action.edit       # "编辑此页"按钮
+    - content.action.view       # "查看源码"按钮
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition                 # 提示框（!!! note）
+  - pymdownx.details           # 折叠详情
+  - pymdownx.superfences       # 代码块增强
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite      # 行内代码高亮
+  - pymdownx.tabbed:           # 标签页（多语言对比）
+      alternate_style: true
+  - pymdownx.tasklist:         # 任务列表
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cavvy-lang
+  generator: false              # 隐藏 "Made with Material" 页脚
+
+nav:
+  - 首页: index.md
+  - 快速开始: quick-start.md
+  - 语言指南:
+    - 基础语法: syntax/basics.md
+    - 类型系统: syntax/types.md
+    - 类与对象: syntax/classes.md
+  - 标准库:
+    - 概览: stdlib/index.md
